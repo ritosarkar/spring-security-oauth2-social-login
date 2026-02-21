@@ -12,7 +12,7 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 public class ProjectSecurityConfig {
-
+    /*
     @Bean
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.authorizeHttpRequests((req) ->
@@ -33,15 +33,19 @@ public class ProjectSecurityConfig {
 
     private ClientRegistration githubClientRegistration() {
         return CommonOAuth2Provider.GITHUB.getBuilder("github")
-                .clientId("Ov23lir4IsDtKSe3BWJp")
-                .clientSecret("34cfc63cd7ecc27bddc6a5b60187031e63558ee7")
+        //setting clientId,clientSecret value inside environment variables
+                .clientId("")
+                .clientSecret("")
                 .build();
     }
 
     private ClientRegistration facebookClientRegistration() {
         return CommonOAuth2Provider.FACEBOOK.getBuilder("facebook")
-                .clientId("806574325748694")
-                .clientSecret("ffe897e3c54a6c3cb1410851659a31fc")
+        //setting clientId,clientSecret value inside environment variables
+                .clientId("")
+                .clientSecret("")
                 .build();
     }
+    */
+
 }
